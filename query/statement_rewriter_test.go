@@ -3,8 +3,8 @@ package query_test
 import (
 	"testing"
 
-	"github.com/influxdata/influxdb/query"
-	"github.com/influxdata/influxql"
+	"github.com/EnnioRC/influxdb/query"
+	"github.com/EnnioRC/influxql"
 )
 
 func TestRewriteStatement(t *testing.T) {

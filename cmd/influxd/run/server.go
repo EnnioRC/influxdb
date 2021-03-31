@@ -12,33 +12,33 @@ import (
 	"runtime/pprof"
 	"time"
 
-	"github.com/influxdata/influxdb"
-	"github.com/influxdata/influxdb/coordinator"
-	"github.com/influxdata/influxdb/logger"
-	"github.com/influxdata/influxdb/models"
-	"github.com/influxdata/influxdb/monitor"
-	"github.com/influxdata/influxdb/query"
-	"github.com/influxdata/influxdb/services/collectd"
-	"github.com/influxdata/influxdb/services/continuous_querier"
-	"github.com/influxdata/influxdb/services/graphite"
-	"github.com/influxdata/influxdb/services/httpd"
-	"github.com/influxdata/influxdb/services/meta"
-	"github.com/influxdata/influxdb/services/opentsdb"
-	"github.com/influxdata/influxdb/services/precreator"
-	"github.com/influxdata/influxdb/services/retention"
-	"github.com/influxdata/influxdb/services/snapshotter"
-	"github.com/influxdata/influxdb/services/subscriber"
-	"github.com/influxdata/influxdb/services/udp"
-	"github.com/influxdata/influxdb/tcp"
-	"github.com/influxdata/influxdb/tsdb"
-	client "github.com/influxdata/usage-client/v1"
+	"github.com/EnnioRC/influxdb"
+	"github.com/EnnioRC/influxdb/coordinator"
+	"github.com/EnnioRC/influxdb/logger"
+	"github.com/EnnioRC/influxdb/models"
+	"github.com/EnnioRC/influxdb/monitor"
+	"github.com/EnnioRC/influxdb/query"
+	"github.com/EnnioRC/influxdb/services/collectd"
+	"github.com/EnnioRC/influxdb/services/continuous_querier"
+	"github.com/EnnioRC/influxdb/services/graphite"
+	"github.com/EnnioRC/influxdb/services/httpd"
+	"github.com/EnnioRC/influxdb/services/meta"
+	"github.com/EnnioRC/influxdb/services/opentsdb"
+	"github.com/EnnioRC/influxdb/services/precreator"
+	"github.com/EnnioRC/influxdb/services/retention"
+	"github.com/EnnioRC/influxdb/services/snapshotter"
+	"github.com/EnnioRC/influxdb/services/subscriber"
+	"github.com/EnnioRC/influxdb/services/udp"
+	"github.com/EnnioRC/influxdb/tcp"
+	"github.com/EnnioRC/influxdb/tsdb"
+	client "github.com/EnnioRC/usage-client/v1"
 	"go.uber.org/zap"
 
-	"github.com/influxdata/influxdb/services/storage"
+	"github.com/EnnioRC/influxdb/services/storage"
 	// Initialize the engine package
-	_ "github.com/influxdata/influxdb/tsdb/engine"
+	_ "github.com/EnnioRC/influxdb/tsdb/engine"
 	// Initialize the index package
-	_ "github.com/influxdata/influxdb/tsdb/index"
+	_ "github.com/EnnioRC/influxdb/tsdb/index"
 )
 
 var startTime time.Time
@@ -580,7 +580,7 @@ func (s *Server) reportServer() {
 		},
 	}
 
-	s.Logger.Info("Sending usage statistics to usage.influxdata.com")
+	s.Logger.Info("Sending usage statistics to usage.EnnioRC.com")
 
 	go cl.Save(usage)
 }
@@ -649,7 +649,7 @@ func raftDBExists(dir string) error {
 	// to downgrade, export, and then import the meta data
 	raftFile := filepath.Join(dir, "raft.db")
 	if _, err := os.Stat(raftFile); err == nil {
-		return fmt.Errorf("detected %s. To proceed, you'll need to either 1) downgrade to v0.11.x, export your metadata, upgrade to the current version again, and then import the metadata or 2) delete the file, which will effectively reset your database. For more assistance with the upgrade, see: https://docs.influxdata.com/influxdb/v0.12/administration/upgrading/", raftFile)
+		return fmt.Errorf("detected %s. To proceed, you'll need to either 1) downgrade to v0.11.x, export your metadata, upgrade to the current version again, and then import the metadata or 2) delete the file, which will effectively reset your database. For more assistance with the upgrade, see: https://docs.EnnioRC.com/influxdb/v0.12/administration/upgrading/", raftFile)
 	}
 	return nil
 }

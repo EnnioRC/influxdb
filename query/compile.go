@@ -6,8 +6,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/influxdata/influxdb/models"
-	"github.com/influxdata/influxql"
+	"github.com/EnnioRC/influxdb/models"
+	"github.com/EnnioRC/influxql"
 )
 
 // CompileOptions are the customization options for the compiler.

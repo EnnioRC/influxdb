@@ -1,11 +1,11 @@
 // Package precreator provides the shard precreation service.
-package precreator // import "github.com/influxdata/influxdb/services/precreator"
+package precreator // import "github.com/EnnioRC/influxdb/services/precreator"
 
 import (
 	"sync"
 	"time"
 
-	"github.com/influxdata/influxdb/logger"
+	"github.com/EnnioRC/influxdb/logger"
 	"go.uber.org/zap"
 )
 

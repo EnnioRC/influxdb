@@ -102,7 +102,7 @@ func upgradeNodeFile(path string) error {
 	}
 
 	if len(peers) > 1 {
-		return fmt.Errorf("to upgrade a cluster, please contact support at influxdata")
+		return fmt.Errorf("to upgrade a cluster, please contact support at EnnioRC")
 	}
 
 	n := &Node{

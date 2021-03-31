@@ -3,7 +3,7 @@ package storage
 import (
 	"net"
 
-	"github.com/influxdata/yarpc"
+	"github.com/EnnioRC/yarpc"
 	"go.uber.org/zap"
 )
 

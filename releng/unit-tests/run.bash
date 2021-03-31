@@ -40,9 +40,9 @@ else
   DOCKER_TAG=next
   GO_VERSION="$GO_NEXT_VERSION"
 fi
-docker build --build-arg "GO_VERSION=$GO_VERSION" -t influxdata/influxdb/releng/unit-tests:"$DOCKER_TAG" "$SRCDIR"
+docker build --build-arg "GO_VERSION=$GO_VERSION" -t EnnioRC/influxdb/releng/unit-tests:"$DOCKER_TAG" "$SRCDIR"
 
 docker run --rm \
    --mount type=bind,source="$OUTDIR",destination=/out \
    --mount type=bind,source="$TARBALL",destination=/influxdb-src.tar.gz,ro=1 \
-  influxdata/influxdb/releng/unit-tests:"$DOCKER_TAG"
+  EnnioRC/influxdb/releng/unit-tests:"$DOCKER_TAG"

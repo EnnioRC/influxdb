@@ -5,9 +5,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/influxdata/influxdb/models"
-	"github.com/influxdata/influxdb/monitor/diagnostics"
-	"github.com/influxdata/influxdb/toml"
+	"github.com/EnnioRC/influxdb/models"
+	"github.com/EnnioRC/influxdb/monitor/diagnostics"
+	"github.com/EnnioRC/influxdb/toml"
 )
 
 const (

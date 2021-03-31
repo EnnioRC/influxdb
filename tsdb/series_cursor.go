@@ -6,8 +6,8 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/influxdata/influxdb/models"
-	"github.com/influxdata/influxql"
+	"github.com/EnnioRC/influxdb/models"
+	"github.com/EnnioRC/influxql"
 )
 
 type SeriesCursor interface {

@@ -108,7 +108,7 @@
   version = "v0.2.0"
 
 [[projects]]
-  name = "github.com/influxdata/influxql"
+  name = "github.com/EnnioRC/influxql"
   packages = [
     ".",
     "internal"
@@ -118,19 +118,19 @@
 
 [[projects]]
   branch = "master"
-  name = "github.com/influxdata/usage-client"
+  name = "github.com/EnnioRC/usage-client"
   packages = ["v1"]
   revision = "6d3895376368aa52a3a81d2a16e90f0f52371967"
 
 [[projects]]
   branch = "master"
-  name = "github.com/influxdata/yamux"
+  name = "github.com/EnnioRC/yamux"
   packages = ["."]
   revision = "1f58ded512de5feabbe30b60c7d33a7a896c5f16"
 
 [[projects]]
   branch = "master"
-  name = "github.com/influxdata/yarpc"
+  name = "github.com/EnnioRC/yarpc"
   packages = [
     ".",
     "codes",

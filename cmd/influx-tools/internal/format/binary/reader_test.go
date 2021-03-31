@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/influxdata/influxdb/cmd/influx-tools/internal/format/binary"
-	"github.com/influxdata/influxdb/models"
-	"github.com/influxdata/influxql"
+	"github.com/EnnioRC/influxdb/cmd/influx-tools/internal/format/binary"
+	"github.com/EnnioRC/influxdb/models"
+	"github.com/EnnioRC/influxql"
 )
 
 func TestReader_OneBucketOneIntegerSeries(t *testing.T) {

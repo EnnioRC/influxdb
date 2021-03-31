@@ -6,10 +6,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/influxdata/influxdb/internal"
-	"github.com/influxdata/influxdb/logger"
-	"github.com/influxdata/influxdb/models"
-	"github.com/influxdata/influxdb/services/meta"
+	"github.com/EnnioRC/influxdb/internal"
+	"github.com/EnnioRC/influxdb/logger"
+	"github.com/EnnioRC/influxdb/models"
+	"github.com/EnnioRC/influxdb/services/meta"
 )
 
 func TestService_OpenClose(t *testing.T) {

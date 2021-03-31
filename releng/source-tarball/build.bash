@@ -47,14 +47,14 @@ if [ -z "$OUTDIR" ]; then
 fi
 
 # Only build with GO_CURRENT_VERSION. No need to build source tarball with next version of Go.
-docker build --build-arg "GO_VERSION=$GO_CURRENT_VERSION" -t influxdata/influxdb/releng/source-tarball:latest "$SRCDIR"
+docker build --build-arg "GO_VERSION=$GO_CURRENT_VERSION" -t EnnioRC/influxdb/releng/source-tarball:latest "$SRCDIR"
 
 mkdir -p "$OUTDIR"
 
 docker run --rm \
   $INFLUXDB_GIT_MOUNT \
   --mount "type=bind,src=${OUTDIR},dst=/out" \
-  influxdata/influxdb/releng/source-tarball:latest \
+  EnnioRC/influxdb/releng/source-tarball:latest \
   -s "$SHA" \
   -b "$BRANCH" \
   -v "$VERSION"

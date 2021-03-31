@@ -9,11 +9,11 @@ import (
 	"sync"
 	"unsafe"
 
-	"github.com/influxdata/influxdb/models"
-	"github.com/influxdata/influxdb/pkg/estimator"
-	"github.com/influxdata/influxdb/pkg/estimator/hll"
-	"github.com/influxdata/influxdb/pkg/mmap"
-	"github.com/influxdata/influxdb/tsdb"
+	"github.com/EnnioRC/influxdb/models"
+	"github.com/EnnioRC/influxdb/pkg/estimator"
+	"github.com/EnnioRC/influxdb/pkg/estimator/hll"
+	"github.com/EnnioRC/influxdb/pkg/mmap"
+	"github.com/EnnioRC/influxdb/tsdb"
 )
 
 // IndexFileVersion is the current TSI1 index file version.

@@ -1,7 +1,7 @@
 package storage
 
 import (
-	"github.com/influxdata/influxdb/models"
+	"github.com/EnnioRC/influxdb/models"
 )
 
 type tagsBuffer struct {

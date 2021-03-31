@@ -3,8 +3,8 @@ package storage
 import (
 	"context"
 
-	"github.com/influxdata/influxdb/models"
-	"github.com/influxdata/influxdb/tsdb"
+	"github.com/EnnioRC/influxdb/models"
+	"github.com/EnnioRC/influxdb/tsdb"
 )
 
 type readRequest struct {

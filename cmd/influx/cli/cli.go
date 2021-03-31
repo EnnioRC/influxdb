@@ -1,5 +1,5 @@
 // Package cli contains the logic of the influx command line client.
-package cli // import "github.com/influxdata/influxdb/cmd/influx/cli"
+package cli // import "github.com/EnnioRC/influxdb/cmd/influx/cli"
 
 import (
 	"bytes"
@@ -25,10 +25,10 @@ import (
 
 	"golang.org/x/crypto/ssh/terminal"
 
-	"github.com/influxdata/influxdb/client"
-	"github.com/influxdata/influxdb/importer/v8"
-	"github.com/influxdata/influxdb/models"
-	"github.com/influxdata/influxql"
+	"github.com/EnnioRC/influxdb/client"
+	"github.com/EnnioRC/influxdb/importer/v8"
+	"github.com/EnnioRC/influxdb/models"
+	"github.com/EnnioRC/influxql"
 	"github.com/peterh/liner"
 )
 
@@ -1059,7 +1059,7 @@ func (c *CommandLine) help() {
         show field keys       show field key information
 
         A full list of influxql commands can be found at:
-        https://docs.influxdata.com/influxdb/latest/query_language/spec/`)
+        https://docs.EnnioRC.com/influxdb/latest/query_language/spec/`)
 }
 
 func (c *CommandLine) history() {

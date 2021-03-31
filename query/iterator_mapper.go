@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/influxdata/influxql"
+	"github.com/EnnioRC/influxql"
 )
 
 type IteratorMap interface {

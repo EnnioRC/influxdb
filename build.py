@@ -35,7 +35,7 @@ LOGROTATE_SCRIPT = "scripts/logrotate"
 DEFAULT_CONFIG = "etc/config.sample.toml"
 
 # Default AWS S3 bucket for uploads
-DEFAULT_BUCKET = "dl.influxdata.com/influxdb/artifacts"
+DEFAULT_BUCKET = "dl.EnnioRC.com/influxdb/artifacts"
 
 CONFIGURATION_FILES = [
     CONFIG_DIR + '/influxdb.conf',
@@ -43,7 +43,7 @@ CONFIGURATION_FILES = [
 ]
 
 PACKAGE_LICENSE = "MIT"
-PACKAGE_URL = "https://github.com/influxdata/influxdb"
+PACKAGE_URL = "https://github.com/EnnioRC/influxdb"
 MAINTAINER = "support@influxdb.com"
 VENDOR = "InfluxData"
 DESCRIPTION = "Distributed time-series database."

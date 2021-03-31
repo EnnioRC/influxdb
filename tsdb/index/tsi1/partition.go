@@ -14,12 +14,12 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/influxdata/influxdb/logger"
-	"github.com/influxdata/influxdb/models"
-	"github.com/influxdata/influxdb/pkg/bytesutil"
-	"github.com/influxdata/influxdb/pkg/estimator"
-	"github.com/influxdata/influxdb/tsdb"
-	"github.com/influxdata/influxql"
+	"github.com/EnnioRC/influxdb/logger"
+	"github.com/EnnioRC/influxdb/models"
+	"github.com/EnnioRC/influxdb/pkg/bytesutil"
+	"github.com/EnnioRC/influxdb/pkg/estimator"
+	"github.com/EnnioRC/influxdb/tsdb"
+	"github.com/EnnioRC/influxql"
 	"go.uber.org/zap"
 )
 

@@ -48,7 +48,7 @@ else
   DOCKER_TAG=next
   GO_VERSION="$GO_NEXT_VERSION"
 fi
-docker build --build-arg "GO_VERSION=$GO_VERSION" -t influxdata/influxdb/releng/raw-binaries:"$DOCKER_TAG" "$SRCDIR"
+docker build --build-arg "GO_VERSION=$GO_VERSION" -t EnnioRC/influxdb/releng/raw-binaries:"$DOCKER_TAG" "$SRCDIR"
 
 mkdir -p "$OUTDIR"
 
@@ -56,4 +56,4 @@ docker run --rm \
    --mount type=bind,source="${OUTDIR}",destination=/out \
    --mount type=bind,source="${TARBALL}",destination=/influxdb-src.tar.gz,ro=1 \
    -e GOOS -e GOARCH -e CGO_ENABLED \
-  influxdata/influxdb/releng/raw-binaries:"$DOCKER_TAG" $RACE_FLAG
+  EnnioRC/influxdb/releng/raw-binaries:"$DOCKER_TAG" $RACE_FLAG

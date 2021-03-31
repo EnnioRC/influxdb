@@ -14,10 +14,10 @@ import (
 	"time"
 
 	"github.com/gogo/protobuf/proto"
-	"github.com/influxdata/influxdb/models"
-	"github.com/influxdata/influxdb/services/storage"
-	"github.com/influxdata/influxql"
-	"github.com/influxdata/yarpc"
+	"github.com/EnnioRC/influxdb/models"
+	"github.com/EnnioRC/influxdb/services/storage"
+	"github.com/EnnioRC/influxql"
+	"github.com/EnnioRC/yarpc"
 	"go.uber.org/zap"
 )
 
@@ -160,7 +160,7 @@ func (cmd *Command) validate() error {
 	}
 
 	if cmd.agg != "" {
-		tm := proto.EnumValueMap("com.github.influxdata.influxdb.services.storage.Aggregate_AggregateType")
+		tm := proto.EnumValueMap("com.github.EnnioRC.influxdb.services.storage.Aggregate_AggregateType")
 		agg, ok := tm[strings.ToUpper(cmd.agg)]
 		if !ok {
 			return errors.New("invalid aggregate function: " + cmd.agg)
@@ -168,14 +168,14 @@ func (cmd *Command) validate() error {
 		cmd.aggType = storage.Aggregate_AggregateType(agg)
 	}
 
-	enums := proto.EnumValueMap("com.github.influxdata.influxdb.services.storage.ReadRequest_Group")
+	enums := proto.EnumValueMap("com.github.EnnioRC.influxdb.services.storage.ReadRequest_Group")
 	group, ok := enums["GROUP_"+strings.ToUpper(cmd.groupArg)]
 	if !ok {
 		return errors.New("invalid group type: " + cmd.groupArg)
 	}
 	cmd.group = storage.ReadRequest_Group(group)
 
-	enums = proto.EnumValueMap("com.github.influxdata.influxdb.services.storage.ReadRequest_HintFlags")
+	enums = proto.EnumValueMap("com.github.EnnioRC.influxdb.services.storage.ReadRequest_HintFlags")
 	for _, h := range strings.Split(cmd.hintsArg, ",") {
 		cmd.hints |= storage.HintFlags(enums["HINT_"+strings.ToUpper(h)])
 	}

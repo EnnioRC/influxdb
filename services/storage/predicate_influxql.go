@@ -4,7 +4,7 @@ import (
 	"errors"
 	"regexp"
 
-	"github.com/influxdata/influxql"
+	"github.com/EnnioRC/influxql"
 )
 
 var measurementRemap = map[string]string{"_measurement": "_name"}

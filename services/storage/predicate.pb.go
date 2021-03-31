@@ -113,7 +113,7 @@ func (x Node_Logical) String() string {
 func (Node_Logical) EnumDescriptor() ([]byte, []int) { return fileDescriptorPredicate, []int{0, 2} }
 
 type Node struct {
-	NodeType Node_Type `protobuf:"varint,1,opt,name=node_type,json=nodeType,proto3,enum=com.github.influxdata.influxdb.services.storage.Node_Type" json:"nodeType"`
+	NodeType Node_Type `protobuf:"varint,1,opt,name=node_type,json=nodeType,proto3,enum=com.github.EnnioRC.influxdb.services.storage.Node_Type" json:"nodeType"`
 	Children []*Node   `protobuf:"bytes,2,rep,name=children" json:"children,omitempty"`
 	// Types that are valid to be assigned to Value:
 	//	*Node_StringValue
@@ -165,10 +165,10 @@ type Node_FieldRefValue struct {
 	FieldRefValue string `protobuf:"bytes,10,opt,name=field_ref_value,json=fieldRefValue,proto3,oneof"`
 }
 type Node_Logical_ struct {
-	Logical Node_Logical `protobuf:"varint,11,opt,name=logical,proto3,enum=com.github.influxdata.influxdb.services.storage.Node_Logical,oneof"`
+	Logical Node_Logical `protobuf:"varint,11,opt,name=logical,proto3,enum=com.github.EnnioRC.influxdb.services.storage.Node_Logical,oneof"`
 }
 type Node_Comparison_ struct {
-	Comparison Node_Comparison `protobuf:"varint,12,opt,name=comparison,proto3,enum=com.github.influxdata.influxdb.services.storage.Node_Comparison,oneof"`
+	Comparison Node_Comparison `protobuf:"varint,12,opt,name=comparison,proto3,enum=com.github.EnnioRC.influxdb.services.storage.Node_Comparison,oneof"`
 }
 
 func (*Node_StringValue) isNode_Value()   {}
@@ -474,11 +474,11 @@ func (m *Predicate) GetRoot() *Node {
 }
 
 func init() {
-	proto.RegisterType((*Node)(nil), "com.github.influxdata.influxdb.services.storage.Node")
-	proto.RegisterType((*Predicate)(nil), "com.github.influxdata.influxdb.services.storage.Predicate")
-	proto.RegisterEnum("com.github.influxdata.influxdb.services.storage.Node_Type", Node_Type_name, Node_Type_value)
-	proto.RegisterEnum("com.github.influxdata.influxdb.services.storage.Node_Comparison", Node_Comparison_name, Node_Comparison_value)
-	proto.RegisterEnum("com.github.influxdata.influxdb.services.storage.Node_Logical", Node_Logical_name, Node_Logical_value)
+	proto.RegisterType((*Node)(nil), "com.github.EnnioRC.influxdb.services.storage.Node")
+	proto.RegisterType((*Predicate)(nil), "com.github.EnnioRC.influxdb.services.storage.Predicate")
+	proto.RegisterEnum("com.github.EnnioRC.influxdb.services.storage.Node_Type", Node_Type_name, Node_Type_value)
+	proto.RegisterEnum("com.github.EnnioRC.influxdb.services.storage.Node_Comparison", Node_Comparison_name, Node_Comparison_value)
+	proto.RegisterEnum("com.github.EnnioRC.influxdb.services.storage.Node_Logical", Node_Logical_name, Node_Logical_value)
 }
 func (m *Node) Marshal() (dAtA []byte, err error) {
 	size := m.Size()

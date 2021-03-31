@@ -3,9 +3,9 @@ package internal
 import (
 	"context"
 
-	"github.com/influxdata/influxdb/models"
-	"github.com/influxdata/influxdb/services/storage"
-	"github.com/influxdata/influxdb/tsdb"
+	"github.com/EnnioRC/influxdb/models"
+	"github.com/EnnioRC/influxdb/services/storage"
+	"github.com/EnnioRC/influxdb/tsdb"
 	"go.uber.org/zap"
 )
 

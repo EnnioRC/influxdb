@@ -7,8 +7,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/influxdata/influxdb/client"
-	"github.com/influxdata/influxdb/cmd/influx/cli"
+	"github.com/EnnioRC/influxdb/client"
+	"github.com/EnnioRC/influxdb/cmd/influx/cli"
 )
 
 // These variables are populated via the Go linker.

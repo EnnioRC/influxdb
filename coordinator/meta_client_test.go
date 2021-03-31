@@ -3,8 +3,8 @@ package coordinator_test
 import (
 	"time"
 
-	"github.com/influxdata/influxdb/services/meta"
-	"github.com/influxdata/influxql"
+	"github.com/EnnioRC/influxdb/services/meta"
+	"github.com/EnnioRC/influxql"
 )
 
 // MetaClient is a mockable implementation of cluster.MetaClient.

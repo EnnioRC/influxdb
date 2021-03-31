@@ -32,7 +32,7 @@ curl -X POST http://localhost:8086/query  --data-urlencode 'db=mydb' --data-urle
 ```
 **If you don't include a clear test case like this, your issue may not be investigated, and may even be closed**. If writing the data is too difficult, please zip up your data directory and include a link to it in your bug report.
 
-Please note that issues are *not the place to file general questions* such as "how do I use collectd with InfluxDB?" Questions of this nature should be sent to the [InfluxData Community](https://community.influxdata.com/), not filed as issues. Issues like this will be closed.
+Please note that issues are *not the place to file general questions* such as "how do I use collectd with InfluxDB?" Questions of this nature should be sent to the [InfluxData Community](https://community.EnnioRC.com/), not filed as issues. Issues like this will be closed.
 
 Feature requests
 ---------------
@@ -43,7 +43,7 @@ Contributing to the source code
 
 InfluxDB follows standard Go project structure. This means that all your Go development are done in `$GOPATH/src`. GOPATH can be any directory under which InfluxDB and all its dependencies will be cloned. For full details on the project structure, follow along below.
 
-You should also read our [coding guide](https://github.com/influxdata/influxdb/blob/master/CODING_GUIDELINES.md), to understand better how to write code for InfluxDB.
+You should also read our [coding guide](https://github.com/EnnioRC/influxdb/blob/master/CODING_GUIDELINES.md), to understand better how to write code for InfluxDB.
 
 Submitting a pull request
 ------------
@@ -57,7 +57,7 @@ To assist in review for the PR, please add the following to your pull request co
 - [ ] CHANGELOG.md updated
 - [ ] Rebased/mergable
 - [ ] Tests pass
-- [ ] Sign [CLA](https://influxdata.com/community/cla/) (if not already signed)
+- [ ] Sign [CLA](https://EnnioRC.com/community/cla/) (if not already signed)
 ```
 
 Signing the CLA
@@ -65,7 +65,7 @@ Signing the CLA
 
 If you are going to be contributing back to InfluxDB please take a
 second to sign our CLA, which can be found
-[on our website](https://influxdata.com/community/cla/).
+[on our website](https://EnnioRC.com/community/cla/).
 
 Installing Go
 -------------
@@ -101,7 +101,7 @@ Setup the project structure and fetch the repo like so:
 ```bash
     mkdir $HOME/gocodez
     export GOPATH=$HOME/gocodez
-    go get github.com/influxdata/influxdb
+    go get github.com/EnnioRC/influxdb
 ```
 
 You can add the line `export GOPATH=$HOME/gocodez` to your bash/zsh file to be set for every shell instead of having to manually run it everytime.
@@ -112,12 +112,12 @@ If you wish to work with fork of InfluxDB, your own fork for example, you must s
 
 ```bash
     export GOPATH=$HOME/gocodez
-    mkdir -p $GOPATH/src/github.com/influxdata
-    cd $GOPATH/src/github.com/influxdata
+    mkdir -p $GOPATH/src/github.com/EnnioRC
+    cd $GOPATH/src/github.com/EnnioRC
     git clone git@github.com:<username>/influxdb
 ```
 
-Retaining the directory structure `$GOPATH/src/github.com/influxdata` is necessary so that Go imports work correctly.
+Retaining the directory structure `$GOPATH/src/github.com/EnnioRC` is necessary so that Go imports work correctly.
 
 Build and Test
 -----
@@ -125,7 +125,7 @@ Build and Test
 Make sure you have Go installed and the project structure as shown above. To then get the dependencies for the project, execute the following commands:
 
 ```bash
-cd $GOPATH/src/github.com/influxdata/influxdb
+cd $GOPATH/src/github.com/EnnioRC/influxdb
 dep ensure
 ```
 
@@ -156,7 +156,7 @@ python build.py --package
 To run the tests, execute the following command:
 
 ```bash
-cd $GOPATH/src/github.com/influxdata/influxdb
+cd $GOPATH/src/github.com/EnnioRC/influxdb
 go test -v ./...
 
 # run tests that match some pattern
@@ -227,7 +227,7 @@ Pre-commit checks
 
 We have a pre-commit hook to make sure code is formatted properly and vetted before you commit any changes. We strongly recommend using the pre-commit hook to guard against accidentally committing unformatted code. To use the pre-commit hook, run the following:
 ```bash
-    cd $GOPATH/src/github.com/influxdata/influxdb
+    cd $GOPATH/src/github.com/EnnioRC/influxdb
     cp .hooks/pre-commit .git/hooks/
 ```
 In case the commit is rejected because it's not formatted you can run
@@ -277,6 +277,6 @@ func BenchmarkSomething(b *testing.B) {
 
 Continuous Integration testing
 -----
-InfluxDB uses CircleCI for continuous integration testing. CircleCI executes [test.sh](https://github.com/influxdata/influxdb/blob/master/test.sh), so you may do the same on your local development environment before creating a pull request.
+InfluxDB uses CircleCI for continuous integration testing. CircleCI executes [test.sh](https://github.com/EnnioRC/influxdb/blob/master/test.sh), so you may do the same on your local development environment before creating a pull request.
 
 The `test.sh` script executes a test suite with 5 variants (standard 64 bit, 64 bit with race detection, 32 bit, TSI, go version 1.10.6), each executes with a different arg, 0 through 4. Unless you know differently, `./test.sh 0` is probably all you need.

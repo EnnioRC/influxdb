@@ -6,9 +6,9 @@ import (
 	"sort"
 	"time"
 
-	"github.com/influxdata/influxdb/query/internal/gota"
-	"github.com/influxdata/influxdb/query/neldermead"
-	"github.com/influxdata/influxql"
+	"github.com/EnnioRC/influxdb/query/internal/gota"
+	"github.com/EnnioRC/influxdb/query/neldermead"
+	"github.com/EnnioRC/influxql"
 )
 
 // FieldMapper is a FieldMapper that wraps another FieldMapper and exposes

@@ -10,15 +10,15 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/influxdata/influxdb/internal"
-	"github.com/influxdata/influxdb/logger"
-	"github.com/influxdata/influxdb/models"
-	"github.com/influxdata/influxdb/pkg/slices"
-	"github.com/influxdata/influxdb/query"
-	"github.com/influxdata/influxdb/tsdb"
-	"github.com/influxdata/influxdb/tsdb/index/inmem"
-	"github.com/influxdata/influxdb/tsdb/index/tsi1"
-	"github.com/influxdata/influxql"
+	"github.com/EnnioRC/influxdb/internal"
+	"github.com/EnnioRC/influxdb/logger"
+	"github.com/EnnioRC/influxdb/models"
+	"github.com/EnnioRC/influxdb/pkg/slices"
+	"github.com/EnnioRC/influxdb/query"
+	"github.com/EnnioRC/influxdb/tsdb"
+	"github.com/EnnioRC/influxdb/tsdb/index/inmem"
+	"github.com/EnnioRC/influxdb/tsdb/index/tsi1"
+	"github.com/EnnioRC/influxql"
 )
 
 // Ensure iterator can merge multiple iterators together.

@@ -1,4 +1,4 @@
-package tsdb // import "github.com/influxdata/influxdb/tsdb"
+package tsdb // import "github.com/EnnioRC/influxdb/tsdb"
 
 import (
 	"bytes"
@@ -15,13 +15,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/influxdata/influxdb/logger"
-	"github.com/influxdata/influxdb/models"
-	"github.com/influxdata/influxdb/pkg/estimator"
-	"github.com/influxdata/influxdb/pkg/estimator/hll"
-	"github.com/influxdata/influxdb/pkg/limiter"
-	"github.com/influxdata/influxdb/query"
-	"github.com/influxdata/influxql"
+	"github.com/EnnioRC/influxdb/logger"
+	"github.com/EnnioRC/influxdb/models"
+	"github.com/EnnioRC/influxdb/pkg/estimator"
+	"github.com/EnnioRC/influxdb/pkg/estimator/hll"
+	"github.com/EnnioRC/influxdb/pkg/limiter"
+	"github.com/EnnioRC/influxdb/query"
+	"github.com/EnnioRC/influxql"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 )

@@ -11,24 +11,24 @@ import (
 	"strings"
 
 	"github.com/BurntSushi/toml"
-	"github.com/influxdata/influxdb/coordinator"
-	"github.com/influxdata/influxdb/logger"
-	"github.com/influxdata/influxdb/monitor"
-	"github.com/influxdata/influxdb/monitor/diagnostics"
-	"github.com/influxdata/influxdb/pkg/tlsconfig"
-	"github.com/influxdata/influxdb/services/collectd"
-	"github.com/influxdata/influxdb/services/continuous_querier"
-	"github.com/influxdata/influxdb/services/graphite"
-	"github.com/influxdata/influxdb/services/httpd"
-	"github.com/influxdata/influxdb/services/meta"
-	"github.com/influxdata/influxdb/services/opentsdb"
-	"github.com/influxdata/influxdb/services/precreator"
-	"github.com/influxdata/influxdb/services/retention"
-	"github.com/influxdata/influxdb/services/storage"
-	"github.com/influxdata/influxdb/services/subscriber"
-	"github.com/influxdata/influxdb/services/udp"
-	itoml "github.com/influxdata/influxdb/toml"
-	"github.com/influxdata/influxdb/tsdb"
+	"github.com/EnnioRC/influxdb/coordinator"
+	"github.com/EnnioRC/influxdb/logger"
+	"github.com/EnnioRC/influxdb/monitor"
+	"github.com/EnnioRC/influxdb/monitor/diagnostics"
+	"github.com/EnnioRC/influxdb/pkg/tlsconfig"
+	"github.com/EnnioRC/influxdb/services/collectd"
+	"github.com/EnnioRC/influxdb/services/continuous_querier"
+	"github.com/EnnioRC/influxdb/services/graphite"
+	"github.com/EnnioRC/influxdb/services/httpd"
+	"github.com/EnnioRC/influxdb/services/meta"
+	"github.com/EnnioRC/influxdb/services/opentsdb"
+	"github.com/EnnioRC/influxdb/services/precreator"
+	"github.com/EnnioRC/influxdb/services/retention"
+	"github.com/EnnioRC/influxdb/services/storage"
+	"github.com/EnnioRC/influxdb/services/subscriber"
+	"github.com/EnnioRC/influxdb/services/udp"
+	itoml "github.com/EnnioRC/influxdb/toml"
+	"github.com/EnnioRC/influxdb/tsdb"
 	"golang.org/x/text/encoding/unicode"
 	"golang.org/x/text/transform"
 )
@@ -125,8 +125,8 @@ func (c *Config) FromTomlFile(fpath string) error {
 
 	// Handle any potential Byte-Order-Marks that may be in the config file.
 	// This is for Windows compatibility only.
-	// See https://github.com/influxdata/telegraf/issues/1378 and
-	// https://github.com/influxdata/influxdb/issues/8965.
+	// See https://github.com/EnnioRC/telegraf/issues/1378 and
+	// https://github.com/EnnioRC/influxdb/issues/8965.
 	bom := unicode.BOMOverride(transform.Nop)
 	bs, _, err = transform.Bytes(bom, bs)
 	if err != nil {

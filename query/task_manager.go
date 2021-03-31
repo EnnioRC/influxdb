@@ -8,8 +8,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/influxdata/influxdb/models"
-	"github.com/influxdata/influxql"
+	"github.com/EnnioRC/influxdb/models"
+	"github.com/EnnioRC/influxql"
 	"go.uber.org/zap"
 )
 

@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/influxdata/influxdb/tsdb"
-	"github.com/influxdata/influxdb/tsdb/index/tsi1"
+	"github.com/EnnioRC/influxdb/tsdb"
+	"github.com/EnnioRC/influxdb/tsdb/index/tsi1"
 )
 
 func TestPartition_Open(t *testing.T) {

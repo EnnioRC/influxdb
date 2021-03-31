@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/influxdata/influxdb/logger"
-	"github.com/influxdata/influxdb/query"
-	"github.com/influxdata/influxql"
+	"github.com/EnnioRC/influxdb/logger"
+	"github.com/EnnioRC/influxdb/query"
+	"github.com/EnnioRC/influxql"
 )
 
 func BenchmarkIntegerIterator_Next(b *testing.B) {

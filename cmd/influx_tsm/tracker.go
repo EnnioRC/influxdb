@@ -8,8 +8,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/influxdata/influxdb/cmd/influx_tsm/stats"
-	"github.com/influxdata/influxdb/cmd/influx_tsm/tsdb"
+	"github.com/EnnioRC/influxdb/cmd/influx_tsm/stats"
+	"github.com/EnnioRC/influxdb/cmd/influx_tsm/tsdb"
 )
 
 // tracker will orchestrate and track the conversions of non-TSM shards to TSM

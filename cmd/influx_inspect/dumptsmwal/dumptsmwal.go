@@ -10,7 +10,7 @@ import (
 	"path/filepath"
 	"sort"
 
-	"github.com/influxdata/influxdb/tsdb/engine/tsm1"
+	"github.com/EnnioRC/influxdb/tsdb/engine/tsm1"
 )
 
 // Command represents the program execution for "influxd dumptsmwal".

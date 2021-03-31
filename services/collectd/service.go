@@ -1,5 +1,5 @@
 // Package collectd provides a service for InfluxDB to ingest data via the collectd protocol.
-package collectd // import "github.com/influxdata/influxdb/services/collectd"
+package collectd // import "github.com/EnnioRC/influxdb/services/collectd"
 
 import (
 	"bytes"
@@ -15,10 +15,10 @@ import (
 
 	"collectd.org/api"
 	"collectd.org/network"
-	"github.com/influxdata/influxdb/logger"
-	"github.com/influxdata/influxdb/models"
-	"github.com/influxdata/influxdb/services/meta"
-	"github.com/influxdata/influxdb/tsdb"
+	"github.com/EnnioRC/influxdb/logger"
+	"github.com/EnnioRC/influxdb/models"
+	"github.com/EnnioRC/influxdb/services/meta"
+	"github.com/EnnioRC/influxdb/tsdb"
 	"go.uber.org/zap"
 )
 

@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/influxdata/influxdb/models"
-	"github.com/influxdata/influxdb/tsdb/index/tsi1"
+	"github.com/EnnioRC/influxdb/models"
+	"github.com/EnnioRC/influxdb/tsdb/index/tsi1"
 )
 
 // Ensure multiple index files can be compacted together.

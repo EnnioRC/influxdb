@@ -24,7 +24,7 @@ package storage
 import (
 	context "context"
 
-	yarpc "github.com/influxdata/yarpc"
+	yarpc "github.com/EnnioRC/yarpc"
 )
 
 import proto "github.com/gogo/protobuf/proto"
@@ -32,7 +32,7 @@ import fmt "fmt"
 import math "math"
 import _ "github.com/gogo/protobuf/gogoproto"
 import google_protobuf1 "github.com/gogo/protobuf/types"
-import _ "github.com/influxdata/yarpc/yarpcproto"
+import _ "github.com/EnnioRC/yarpc/yarpcproto"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
@@ -164,7 +164,7 @@ func _Storage_Hints_Handler(srv interface{}, ctx context.Context, dec func(inter
 }
 
 var _Storage_serviceDesc = yarpc.ServiceDesc{
-	ServiceName: "com.github.influxdata.influxdb.services.storage.Storage",
+	ServiceName: "com.github.EnnioRC.influxdb.services.storage.Storage",
 	Index:       0,
 	HandlerType: (*StorageServer)(nil),
 	Methods: []yarpc.MethodDesc{

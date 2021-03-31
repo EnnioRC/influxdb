@@ -26,7 +26,7 @@ import fmt "fmt"
 import math "math"
 import _ "github.com/gogo/protobuf/gogoproto"
 import _ "github.com/gogo/protobuf/types"
-import _ "github.com/influxdata/yarpc/yarpcproto"
+import _ "github.com/EnnioRC/yarpc/yarpcproto"
 
 import io "io"
 
@@ -196,7 +196,7 @@ type ReadRequest struct {
 	// its behavior.
 	GroupKeys []string `protobuf:"bytes,4,rep,name=group_keys,json=groupKeys" json:"group_keys,omitempty"`
 	//
-	Group ReadRequest_Group `protobuf:"varint,11,opt,name=group,proto3,enum=com.github.influxdata.influxdb.services.storage.ReadRequest_Group" json:"group,omitempty"`
+	Group ReadRequest_Group `protobuf:"varint,11,opt,name=group,proto3,enum=com.github.EnnioRC.influxdb.services.storage.ReadRequest_Group" json:"group,omitempty"`
 	// Aggregate specifies an optional aggregate to apply to the data.
 	// TODO(sgc): switch to slice for multiple aggregates in a single request
 	Aggregate *Aggregate `protobuf:"bytes,9,opt,name=aggregate" json:"aggregate,omitempty"`
@@ -221,7 +221,7 @@ func (*ReadRequest) ProtoMessage()               {}
 func (*ReadRequest) Descriptor() ([]byte, []int) { return fileDescriptorStorage, []int{0} }
 
 type Aggregate struct {
-	Type Aggregate_AggregateType `protobuf:"varint,1,opt,name=type,proto3,enum=com.github.influxdata.influxdb.services.storage.Aggregate_AggregateType" json:"type,omitempty"`
+	Type Aggregate_AggregateType `protobuf:"varint,1,opt,name=type,proto3,enum=com.github.EnnioRC.influxdb.services.storage.Aggregate_AggregateType" json:"type,omitempty"`
 }
 
 func (m *Aggregate) Reset()                    { *m = Aggregate{} }
@@ -543,7 +543,7 @@ func (*ReadResponse_GroupFrame) Descriptor() ([]byte, []int) {
 
 type ReadResponse_SeriesFrame struct {
 	Tags     []Tag                 `protobuf:"bytes,1,rep,name=tags" json:"tags"`
-	DataType ReadResponse_DataType `protobuf:"varint,2,opt,name=data_type,json=dataType,proto3,enum=com.github.influxdata.influxdb.services.storage.ReadResponse_DataType" json:"data_type,omitempty"`
+	DataType ReadResponse_DataType `protobuf:"varint,2,opt,name=data_type,json=dataType,proto3,enum=com.github.EnnioRC.influxdb.services.storage.ReadResponse_DataType" json:"data_type,omitempty"`
 }
 
 func (m *ReadResponse_SeriesFrame) Reset()         { *m = ReadResponse_SeriesFrame{} }
@@ -644,26 +644,26 @@ func (*TimestampRange) ProtoMessage()               {}
 func (*TimestampRange) Descriptor() ([]byte, []int) { return fileDescriptorStorage, []int{6} }
 
 func init() {
-	proto.RegisterType((*ReadRequest)(nil), "com.github.influxdata.influxdb.services.storage.ReadRequest")
-	proto.RegisterType((*Aggregate)(nil), "com.github.influxdata.influxdb.services.storage.Aggregate")
-	proto.RegisterType((*Tag)(nil), "com.github.influxdata.influxdb.services.storage.Tag")
-	proto.RegisterType((*ReadResponse)(nil), "com.github.influxdata.influxdb.services.storage.ReadResponse")
-	proto.RegisterType((*ReadResponse_Frame)(nil), "com.github.influxdata.influxdb.services.storage.ReadResponse.Frame")
-	proto.RegisterType((*ReadResponse_GroupFrame)(nil), "com.github.influxdata.influxdb.services.storage.ReadResponse.GroupFrame")
-	proto.RegisterType((*ReadResponse_SeriesFrame)(nil), "com.github.influxdata.influxdb.services.storage.ReadResponse.SeriesFrame")
-	proto.RegisterType((*ReadResponse_FloatPointsFrame)(nil), "com.github.influxdata.influxdb.services.storage.ReadResponse.FloatPointsFrame")
-	proto.RegisterType((*ReadResponse_IntegerPointsFrame)(nil), "com.github.influxdata.influxdb.services.storage.ReadResponse.IntegerPointsFrame")
-	proto.RegisterType((*ReadResponse_UnsignedPointsFrame)(nil), "com.github.influxdata.influxdb.services.storage.ReadResponse.UnsignedPointsFrame")
-	proto.RegisterType((*ReadResponse_BooleanPointsFrame)(nil), "com.github.influxdata.influxdb.services.storage.ReadResponse.BooleanPointsFrame")
-	proto.RegisterType((*ReadResponse_StringPointsFrame)(nil), "com.github.influxdata.influxdb.services.storage.ReadResponse.StringPointsFrame")
-	proto.RegisterType((*CapabilitiesResponse)(nil), "com.github.influxdata.influxdb.services.storage.CapabilitiesResponse")
-	proto.RegisterType((*HintsResponse)(nil), "com.github.influxdata.influxdb.services.storage.HintsResponse")
-	proto.RegisterType((*TimestampRange)(nil), "com.github.influxdata.influxdb.services.storage.TimestampRange")
-	proto.RegisterEnum("com.github.influxdata.influxdb.services.storage.ReadRequest_Group", ReadRequest_Group_name, ReadRequest_Group_value)
-	proto.RegisterEnum("com.github.influxdata.influxdb.services.storage.ReadRequest_HintFlags", ReadRequest_HintFlags_name, ReadRequest_HintFlags_value)
-	proto.RegisterEnum("com.github.influxdata.influxdb.services.storage.Aggregate_AggregateType", Aggregate_AggregateType_name, Aggregate_AggregateType_value)
-	proto.RegisterEnum("com.github.influxdata.influxdb.services.storage.ReadResponse_FrameType", ReadResponse_FrameType_name, ReadResponse_FrameType_value)
-	proto.RegisterEnum("com.github.influxdata.influxdb.services.storage.ReadResponse_DataType", ReadResponse_DataType_name, ReadResponse_DataType_value)
+	proto.RegisterType((*ReadRequest)(nil), "com.github.EnnioRC.influxdb.services.storage.ReadRequest")
+	proto.RegisterType((*Aggregate)(nil), "com.github.EnnioRC.influxdb.services.storage.Aggregate")
+	proto.RegisterType((*Tag)(nil), "com.github.EnnioRC.influxdb.services.storage.Tag")
+	proto.RegisterType((*ReadResponse)(nil), "com.github.EnnioRC.influxdb.services.storage.ReadResponse")
+	proto.RegisterType((*ReadResponse_Frame)(nil), "com.github.EnnioRC.influxdb.services.storage.ReadResponse.Frame")
+	proto.RegisterType((*ReadResponse_GroupFrame)(nil), "com.github.EnnioRC.influxdb.services.storage.ReadResponse.GroupFrame")
+	proto.RegisterType((*ReadResponse_SeriesFrame)(nil), "com.github.EnnioRC.influxdb.services.storage.ReadResponse.SeriesFrame")
+	proto.RegisterType((*ReadResponse_FloatPointsFrame)(nil), "com.github.EnnioRC.influxdb.services.storage.ReadResponse.FloatPointsFrame")
+	proto.RegisterType((*ReadResponse_IntegerPointsFrame)(nil), "com.github.EnnioRC.influxdb.services.storage.ReadResponse.IntegerPointsFrame")
+	proto.RegisterType((*ReadResponse_UnsignedPointsFrame)(nil), "com.github.EnnioRC.influxdb.services.storage.ReadResponse.UnsignedPointsFrame")
+	proto.RegisterType((*ReadResponse_BooleanPointsFrame)(nil), "com.github.EnnioRC.influxdb.services.storage.ReadResponse.BooleanPointsFrame")
+	proto.RegisterType((*ReadResponse_StringPointsFrame)(nil), "com.github.EnnioRC.influxdb.services.storage.ReadResponse.StringPointsFrame")
+	proto.RegisterType((*CapabilitiesResponse)(nil), "com.github.EnnioRC.influxdb.services.storage.CapabilitiesResponse")
+	proto.RegisterType((*HintsResponse)(nil), "com.github.EnnioRC.influxdb.services.storage.HintsResponse")
+	proto.RegisterType((*TimestampRange)(nil), "com.github.EnnioRC.influxdb.services.storage.TimestampRange")
+	proto.RegisterEnum("com.github.EnnioRC.influxdb.services.storage.ReadRequest_Group", ReadRequest_Group_name, ReadRequest_Group_value)
+	proto.RegisterEnum("com.github.EnnioRC.influxdb.services.storage.ReadRequest_HintFlags", ReadRequest_HintFlags_name, ReadRequest_HintFlags_value)
+	proto.RegisterEnum("com.github.EnnioRC.influxdb.services.storage.Aggregate_AggregateType", Aggregate_AggregateType_name, Aggregate_AggregateType_value)
+	proto.RegisterEnum("com.github.EnnioRC.influxdb.services.storage.ReadResponse_FrameType", ReadResponse_FrameType_name, ReadResponse_FrameType_value)
+	proto.RegisterEnum("com.github.EnnioRC.influxdb.services.storage.ReadResponse_DataType", ReadResponse_DataType_name, ReadResponse_DataType_value)
 }
 func (m *ReadRequest) Marshal() (dAtA []byte, err error) {
 	size := m.Size()

@@ -9,9 +9,9 @@ package tsm1
 import (
 	"context"
 
-	"github.com/influxdata/influxdb/models"
-	"github.com/influxdata/influxdb/query"
-	"github.com/influxdata/influxdb/tsdb"
+	"github.com/EnnioRC/influxdb/models"
+	"github.com/EnnioRC/influxdb/query"
+	"github.com/EnnioRC/influxdb/tsdb"
 )
 
 // buildFloatBatchCursor creates a batch cursor for a float field.

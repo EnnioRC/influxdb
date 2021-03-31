@@ -7,10 +7,10 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/influxdata/influxdb/cmd/influx-tools/internal/format/binary"
-	"github.com/influxdata/influxdb/cmd/influx-tools/internal/tlv"
-	"github.com/influxdata/influxdb/models"
-	"github.com/influxdata/influxql"
+	"github.com/EnnioRC/influxdb/cmd/influx-tools/internal/format/binary"
+	"github.com/EnnioRC/influxdb/cmd/influx-tools/internal/tlv"
+	"github.com/EnnioRC/influxdb/models"
+	"github.com/EnnioRC/influxql"
 )
 
 func TestWriter_WriteOneBucketOneSeries(t *testing.T) {

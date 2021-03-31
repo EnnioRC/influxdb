@@ -36,7 +36,7 @@ func (h HintFlags) String() string {
 	f := uint32(h)
 
 	var s []string
-	enums := proto.EnumValueMap("com.github.influxdata.influxdb.services.storage.ReadRequest_HintFlags")
+	enums := proto.EnumValueMap("com.github.EnnioRC.influxdb.services.storage.ReadRequest_HintFlags")
 	if h == 0 {
 		return "HINT_NONE"
 	}

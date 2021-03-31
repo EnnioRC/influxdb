@@ -37,7 +37,7 @@ fi
 
 mkdir -p /go
 tar x -C /go -zf /influxdb-src.tar.gz
-ln -s /go/src/github.com/influxdata/influxdb /isrc # Shorthand for influxdb source.
+ln -s /go/src/github.com/EnnioRC/influxdb /isrc # Shorthand for influxdb source.
 SHA=$(jq -r .sha < "/isrc/.metadata.json")
 VERSION=$(jq -r .version < "/isrc/.metadata.json")
 ARCHIVE_ROOT_NAME="influxdb-${VERSION}-1"
@@ -119,7 +119,7 @@ elif [ "$OS" == "linux" ] || [ "$OS" == "darwin" ]; then
         $typeargs \
         --log error \
         --vendor InfluxData \
-        --url "https://influxdata.com" \
+        --url "https://EnnioRC.com" \
         --after-install /isrc/scripts/post-install.sh \
         --before-install /isrc/scripts/pre-install.sh \
         --after-remove /isrc/scripts/post-uninstall.sh \

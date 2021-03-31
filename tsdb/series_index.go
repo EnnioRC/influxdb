@@ -7,9 +7,9 @@ import (
 	"io"
 	"os"
 
-	"github.com/influxdata/influxdb/models"
-	"github.com/influxdata/influxdb/pkg/mmap"
-	"github.com/influxdata/influxdb/pkg/rhh"
+	"github.com/EnnioRC/influxdb/models"
+	"github.com/EnnioRC/influxdb/pkg/mmap"
+	"github.com/EnnioRC/influxdb/pkg/rhh"
 )
 
 const (

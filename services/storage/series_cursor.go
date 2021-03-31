@@ -5,10 +5,10 @@ import (
 	"errors"
 	"sort"
 
-	"github.com/influxdata/influxdb/models"
-	"github.com/influxdata/influxdb/query"
-	"github.com/influxdata/influxdb/tsdb"
-	"github.com/influxdata/influxql"
+	"github.com/EnnioRC/influxdb/models"
+	"github.com/EnnioRC/influxdb/query"
+	"github.com/EnnioRC/influxdb/tsdb"
+	"github.com/EnnioRC/influxql"
 	"github.com/opentracing/opentracing-go"
 )
 

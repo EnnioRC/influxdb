@@ -36,7 +36,7 @@ pipeline {
           sh """
           set -e
           if ! git diff --quiet; then
-            git config remote.origin.pushurl git@github.com:influxdata/influxdb.git
+            git config remote.origin.pushurl git@github.com:EnnioRC/influxdb.git
             git commit -am 'Update changelog'
             git push origin HEAD:${BRANCH_NAME}
           fi
@@ -54,16 +54,16 @@ pipeline {
 
       steps {
         sh """
-        mkdir -p /go/src/github.com/influxdata
-        cp -a $WORKSPACE /go/src/github.com/influxdata/influxdb
+        mkdir -p /go/src/github.com/EnnioRC
+        cp -a $WORKSPACE /go/src/github.com/EnnioRC/influxdb
 
-        cd /go/src/github.com/influxdata/influxdb
+        cd /go/src/github.com/EnnioRC/influxdb
         go get github.com/golang/dep/cmd/dep
         dep ensure -vendor-only
         """
 
         sh """
-        cd /go/src/github.com/influxdata/influxdb
+        cd /go/src/github.com/EnnioRC/influxdb
         go test -parallel=1 ./...
         """
       }
@@ -78,16 +78,16 @@ pipeline {
 
       steps {
         sh """
-        mkdir -p /go/src/github.com/influxdata
-        cp -a $WORKSPACE /go/src/github.com/influxdata/influxdb
+        mkdir -p /go/src/github.com/EnnioRC
+        cp -a $WORKSPACE /go/src/github.com/EnnioRC/influxdb
 
-        cd /go/src/github.com/influxdata/influxdb
+        cd /go/src/github.com/EnnioRC/influxdb
         go get github.com/golang/dep/cmd/dep
         dep ensure -vendor-only
         """
 
         sh """
-        cd /go/src/github.com/influxdata/influxdb
+        cd /go/src/github.com/EnnioRC/influxdb
         go test -parallel=1 ./...
         """
       }

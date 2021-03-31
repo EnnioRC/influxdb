@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/influxdata/influxdb/monitor"
+	"github.com/EnnioRC/influxdb/monitor"
 )
 
 func TestDiagnostics_Network(t *testing.T) {

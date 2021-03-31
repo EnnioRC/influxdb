@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/influxdata/influxdb/tsdb/engine/tsm1"
+	"github.com/EnnioRC/influxdb/tsdb/engine/tsm1"
 )
 
 // Test that an error is returned if a manifest isn't the first thing written

@@ -7,7 +7,7 @@ influxd-restore - Restores databases or specific shards to an InfluxDB OSS insta
   from the specified PATH. Complete documentation
   for the '-portable' restore method described here, and the deprecated legacy restore format,
   is located here:
-    https://docs.influxdata.com/influxdb/latest/administration/backup_and_restore/
+    https://docs.EnnioRC.com/influxdb/latest/administration/backup_and_restore/
 
 
 SYNOPSIS

@@ -5,7 +5,7 @@
 # field and the default value used. Uncommenting a line and changing the value
 # will change the value used at runtime when the process is restarted.
 
-# Once every 24 hours InfluxDB will report usage data to usage.influxdata.com
+# Once every 24 hours InfluxDB will report usage data to usage.EnnioRC.com
 # The data includes a random ID, os, arch, version, the number of series and other
 # usage data. No data from user databases is ever transmitted.
 # Change this option to true to disable reporting.

@@ -6,8 +6,8 @@ import (
 	"path/filepath"
 	"strconv"
 
-	"github.com/influxdata/influxdb/cmd/influx-tools/internal/errlist"
-	"github.com/influxdata/influxdb/tsdb/engine/tsm1"
+	"github.com/EnnioRC/influxdb/cmd/influx-tools/internal/errlist"
+	"github.com/EnnioRC/influxdb/tsdb/engine/tsm1"
 )
 
 const (

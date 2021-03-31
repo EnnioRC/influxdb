@@ -45,7 +45,7 @@ if [ -z "$OUTDIR" ] || [ -z "$SRC_TARBALL" ] || [ -z "$BIN_TARBALL" ] || [ -z "$
 fi
 
 # Always build the latest version of the image.
-docker build -t influxdata/influxdb/releng/packages:latest "$SRCDIR"
+docker build -t EnnioRC/influxdb/releng/packages:latest "$SRCDIR"
 
 mkdir -p "$OUTDIR"
 
@@ -58,4 +58,4 @@ docker run --rm \
    --mount type=bind,source="${OUTDIR}",destination=/out \
    --mount type=bind,source="${SRC_TARBALL}",destination=/influxdb-src.tar.gz \
    --mount type=bind,source="${BIN_TARBALL}",destination=/influxdb-bin.tar.gz \
-  influxdata/influxdb/releng/packages:latest -O "$OS" -A "$ARCH" $STATIC
+  EnnioRC/influxdb/releng/packages:latest -O "$OS" -A "$ARCH" $STATIC

@@ -1,8 +1,8 @@
 package internal
 
 import (
-	"github.com/influxdata/influxdb/models"
-	"github.com/influxdata/influxql"
+	"github.com/EnnioRC/influxdb/models"
+	"github.com/EnnioRC/influxql"
 )
 
 // AuthorizerMock is a mockable implementation of a query.Authorizer.

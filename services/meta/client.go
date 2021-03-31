@@ -17,9 +17,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/influxdata/influxdb"
-	"github.com/influxdata/influxdb/logger"
-	"github.com/influxdata/influxql"
+	"github.com/EnnioRC/influxdb"
+	"github.com/EnnioRC/influxdb/logger"
+	"github.com/EnnioRC/influxql"
 	"go.uber.org/zap"
 
 	"golang.org/x/crypto/bcrypt"

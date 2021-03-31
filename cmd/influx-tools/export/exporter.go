@@ -8,12 +8,12 @@ import (
 	"text/tabwriter"
 	"time"
 
-	"github.com/influxdata/influxdb/cmd/influx-tools/internal/format"
-	"github.com/influxdata/influxdb/cmd/influx-tools/internal/storage"
-	"github.com/influxdata/influxdb/cmd/influx-tools/server"
-	"github.com/influxdata/influxdb/models"
-	"github.com/influxdata/influxdb/services/meta"
-	"github.com/influxdata/influxdb/tsdb"
+	"github.com/EnnioRC/influxdb/cmd/influx-tools/internal/format"
+	"github.com/EnnioRC/influxdb/cmd/influx-tools/internal/storage"
+	"github.com/EnnioRC/influxdb/cmd/influx-tools/server"
+	"github.com/EnnioRC/influxdb/models"
+	"github.com/EnnioRC/influxdb/services/meta"
+	"github.com/EnnioRC/influxdb/tsdb"
 )
 
 type exporterConfig struct {

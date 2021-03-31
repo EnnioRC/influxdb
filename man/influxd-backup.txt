@@ -6,7 +6,7 @@ NAME
 influxd-backup - Creates a backup copy of specified InfluxDB OSS database(s) and saves to disk. Use this newer `-portable` option 
   unless legacy support is required. Complete documentation on backing up and restoring, including the deprecated
   legacy format, see:
-    https://docs.influxdata.com/influxdb/latest/administration/backup_and_restore/
+    https://docs.EnnioRC.com/influxdb/latest/administration/backup_and_restore/
 
 
 SYNOPSIS

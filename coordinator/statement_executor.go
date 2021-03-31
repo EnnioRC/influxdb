@@ -11,15 +11,15 @@ import (
 	"strings"
 	"time"
 
-	"github.com/influxdata/influxdb"
-	"github.com/influxdata/influxdb/models"
-	"github.com/influxdata/influxdb/monitor"
-	"github.com/influxdata/influxdb/pkg/tracing"
-	"github.com/influxdata/influxdb/pkg/tracing/fields"
-	"github.com/influxdata/influxdb/query"
-	"github.com/influxdata/influxdb/services/meta"
-	"github.com/influxdata/influxdb/tsdb"
-	"github.com/influxdata/influxql"
+	"github.com/EnnioRC/influxdb"
+	"github.com/EnnioRC/influxdb/models"
+	"github.com/EnnioRC/influxdb/monitor"
+	"github.com/EnnioRC/influxdb/pkg/tracing"
+	"github.com/EnnioRC/influxdb/pkg/tracing/fields"
+	"github.com/EnnioRC/influxdb/query"
+	"github.com/EnnioRC/influxdb/services/meta"
+	"github.com/EnnioRC/influxdb/tsdb"
+	"github.com/EnnioRC/influxql"
 )
 
 // ErrDatabaseNameRequired is returned when executing statements that require a database,

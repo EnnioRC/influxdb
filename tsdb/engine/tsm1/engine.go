@@ -1,5 +1,5 @@
 // Package tsm1 provides a TSDB in the Time Structured Merge tree format.
-package tsm1 // import "github.com/influxdata/influxdb/tsdb/engine/tsm1"
+package tsm1 // import "github.com/EnnioRC/influxdb/tsdb/engine/tsm1"
 
 import (
 	"archive/tar"
@@ -20,21 +20,21 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/influxdata/influxdb/logger"
-	"github.com/influxdata/influxdb/models"
-	"github.com/influxdata/influxdb/pkg/bytesutil"
-	"github.com/influxdata/influxdb/pkg/estimator"
-	"github.com/influxdata/influxdb/pkg/limiter"
-	"github.com/influxdata/influxdb/pkg/metrics"
-	"github.com/influxdata/influxdb/pkg/radix"
-	intar "github.com/influxdata/influxdb/pkg/tar"
-	"github.com/influxdata/influxdb/pkg/tracing"
-	"github.com/influxdata/influxdb/query"
-	"github.com/influxdata/influxdb/tsdb"
-	_ "github.com/influxdata/influxdb/tsdb/index"
-	"github.com/influxdata/influxdb/tsdb/index/inmem"
-	"github.com/influxdata/influxdb/tsdb/index/tsi1"
-	"github.com/influxdata/influxql"
+	"github.com/EnnioRC/influxdb/logger"
+	"github.com/EnnioRC/influxdb/models"
+	"github.com/EnnioRC/influxdb/pkg/bytesutil"
+	"github.com/EnnioRC/influxdb/pkg/estimator"
+	"github.com/EnnioRC/influxdb/pkg/limiter"
+	"github.com/EnnioRC/influxdb/pkg/metrics"
+	"github.com/EnnioRC/influxdb/pkg/radix"
+	intar "github.com/EnnioRC/influxdb/pkg/tar"
+	"github.com/EnnioRC/influxdb/pkg/tracing"
+	"github.com/EnnioRC/influxdb/query"
+	"github.com/EnnioRC/influxdb/tsdb"
+	_ "github.com/EnnioRC/influxdb/tsdb/index"
+	"github.com/EnnioRC/influxdb/tsdb/index/inmem"
+	"github.com/EnnioRC/influxdb/tsdb/index/tsi1"
+	"github.com/EnnioRC/influxql"
 	"go.uber.org/zap"
 )
 
