@@ -19,7 +19,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/influxdata/influxdb/models"
+	"github.com/EnnioRC/influxdb/models"
 )
 
 const (
