@@ -1,6 +1,6 @@
 // Package client implements a now-deprecated client for InfluxDB;
 // use github.com/influxdata/influxdb/client/v2 instead.
-package client // import "github.com/influxdata/influxdb/client"
+package client // import "github.com/EnnioRC/influxdb/client"
 
 import (
 	"bytes"
